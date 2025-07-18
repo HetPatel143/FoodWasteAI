@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donor Dashboard | FoodWaste-AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fas fa-seedling"></i>FoodWaste-AI</div>
+    <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard-donor.html" class="active">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero/Intro Section -->
+  <section class="hero dashboard-hero">
+    <h1>Welcome, Donor!</h1>
+    <p class="hero-sub">Thank you for making a difference. Here’s your impact and donation activity.</p>
+    <div class="hero-curve">
+      <svg viewBox="0 0 1440 100" width="100%" height="100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" fill="#F4F6FB"/>
+      </svg>
+    </div>
+  </section>
+
+  <main class="dashboard-main">
+    <div class="dashboard-cards-grid">
+      <!-- Impact Summary Card -->
+      <section class="dashboard-card impact-card">
+        <h2>Your Impact</h2>
+        <div class="impact-summary">
+          <div><i class="fas fa-seedling"></i> <strong>120kg</strong> Food Saved</div>
+          <div><i class="fas fa-cloud"></i> <strong>30kg</strong> CO₂ Saved</div>
+          <div><i class="fas fa-award"></i> <strong>3</strong> Badges</div>
+        </div>
+      </section>
+      <!-- AI Recommendations Card -->
+      <section class="dashboard-card ai-card">
+        <h2>AI Recommendations</h2>
+        <ul class="ai-recommendations">
+          <li><i class="fas fa-lightbulb"></i> Donate before expiry for maximum impact.</li>
+          <li><i class="fas fa-box"></i> Bundle similar food types for easier pickup.</li>
+          <li><i class="fas fa-calendar-alt"></i> Donate on weekends for higher NGO availability.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Donation Form Card -->
+    <section class="dashboard-card form-card">
+      <h2>Donate Food</h2>
+      <form class="donation-form">
+        <input type="text" placeholder="Food Type" required />
+        <input type="number" placeholder="Quantity (kg)" required />
+        <input type="date" placeholder="Expiry Date" required />
+        <input type="text" placeholder="Location" required />
+        <textarea placeholder="Notes (optional)"></textarea>
+        <input type="file" accept="image/*" />
+        <button type="submit" class="btn btn-green">Submit Donation</button>
+      </form>
+    </section>
+
+    <!-- Donation History Card -->
+    <section class="dashboard-card history-card">
+      <h2>Donation History</h2>
+      <table class="history-table">
+        <thead><tr><th>Date</th><th>Food</th><th>Quantity</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>2024-06-01</td><td>Bread</td><td>10kg</td><td>Delivered</td></tr>
+          <tr><td>2024-05-28</td><td>Rice</td><td>5kg</td><td>Picked Up</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Footer (Modern) -->
+  <footer class="modern-footer">
+    <div class="footer-main">
+      <div class="footer-about">
+        <div class="logo"><i class="fas fa-seedling"></i>FoodWaste-AI</div>
+        <p>Connecting food donors and NGOs to reduce waste and fight hunger. Powered by smart AI matching and a passionate community.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-cta">
+        <h4>Get Involved</h4>
+        <a href="login.html?role=donor" class="btn btn-green">Donate Food</a>
+        <a href="login.html?role=ngo" class="btn btn-orange">Join as NGO</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 FoodWaste-AI. All rights reserved.</span>
+      <span> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></span>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 
